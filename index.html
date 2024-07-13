@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +16,12 @@
             background-color: #f4f4f4;
         }
         header {
-            background-color: #003366;
-            color: white;
+            background: linear-gradient(90deg, #003366 33%, #ffffff 33%, #ffffff 66%, #cc0000 66%);
+            color: #00cc00;
             padding: 20px;
             text-align: center;
             border-radius: 5px 5px 0 0;
+            border-bottom: 3px solid #cc0000;
         }
         h1 {
             margin: 0;
@@ -46,6 +48,41 @@
             text-align: center;
             margin-top: 20px;
             font-style: italic;
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+        }
+        .section h2::before {
+            content: '•';
+            color: #cc0000;
+            margin-right: 10px;
+        }
+
+        .section ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+
+        .section ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 15px;
+            height: 15px;
+            background-color: #cc0000;
+            border-radius: 50%;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .section h2 {
+            margin-top: 0;
         }
     </style>
 </head>
